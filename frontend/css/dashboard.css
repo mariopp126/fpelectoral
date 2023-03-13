@@ -1,0 +1,499 @@
+:root {
+    --color-primary: #15CF68;
+    --color-danger: #CF2515;
+    --color-succsess: #33FF8F;
+    --color-pending: #CF2515;
+    --color-white: #fff;
+    --color-info-dark: #7d8da1;
+    --color-info-light: #dce1eb;
+    --color-dark: #363949;
+    --color-light: rgba(132, 139, 200, 0.18);
+    --color-primary-variant: #07823E;
+    --color-dark-variant: #677483;
+    --color-background: #f6f6f9;
+
+    --card-border-radius: 2rem;
+    --border-radius-1: 0.4rem;
+    --border-radus-2: 0.8rem;
+    --border-radus-3: 1.2rem;
+
+    --card-padding: 1.8rem;
+    --padding-1: 1.2rem;
+
+    --box-shadow: 0 2rem 3rem var(--color-light);
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    appearance: none;
+    border: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 14px;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: poppins, sans-serif;
+    font-size: 1rem;
+    background: var(--color-background);
+    user-select: none;
+    overflow-x: hidden;
+    color: var(--color-dark);
+}
+
+.container {
+    display: grid;
+    width: 96%;
+    margin: 0 auto;
+    background: var(--color-background);
+    gap: 1.8rem;
+    grid-template-columns: 14rem auto 2rem;
+}
+
+a{
+    color: var(--color-dark);
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+h4 {
+    font-size: 0.9rem;
+}
+
+small {
+    font-size: 0.8rem;
+}
+
+.profile-photo {
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.text-muted {
+    color: var(--color-info-dark)
+}
+
+p {
+    color: var(--color-dark-variant);
+}
+
+.primary {
+    color: var(--color-primary);
+}
+
+.danger {
+    color: var(--color-danger);
+}
+
+.success {
+    color: var(--color-succsess);
+}
+
+.warning {
+    color: var(--color-warning);
+}
+
+aside {
+    height: 100vh;
+    background: var(--color-background);
+}
+
+aside .top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.4rem;
+}
+
+aside .logo {
+    display: flex;
+    gap : 0.8rem;
+}
+
+aside .logo img {
+    width: 2rem;
+}
+
+aside .logo h2 {
+    display: flex;
+    align-items: center;
+}
+
+aside .close {
+    display: none;
+}
+
+/* Sidebar */
+
+aside .sidebar {
+    display: flex;
+    flex-direction: column;
+    height: 86vh;
+    position: relative;
+    top: 3rem;
+}
+
+aside h3 {
+    font-weight: 500;
+}
+
+aside .sidebar a {
+    display: flex;
+    color: var(--color-info-dark);
+    margin-left: 2rem;
+    gap: 1rem;
+    align-items: center;
+    position: relative;
+    height: 3.7rem;
+    transition: all 300ms ease;
+}
+aside .sidebar a .profile {
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+    text-align: center;
+    justify-content: left;
+    align-items: center;
+}
+
+aside .sidebar a .profile p {
+    font-size: 1.2rem;
+    color: var(--color-info-dark);
+}
+
+aside .sidebar a span {
+    font-size: 1.6rem;
+    transition: all 300ms ease;
+}
+
+aside .sidebar a:last-child {
+    position: absolute;
+    bottom: 2rem;
+    width: 100%;
+}
+
+aside .sidebar a.active {
+    background:  var(--color-light);
+    color: var(--color-primary);
+    margin-left: 0;
+}
+
+aside .sidebar a.active:before {
+    content: '';
+    width: 6px;
+    height: 100%;
+    background: var(--color-primary);
+}
+
+aside .sidebar a.active span{
+    color: var(--color-primary);
+    margin: calc(1rem -3px);
+}
+
+aside .sidebar a:hover {
+    color: var(--color-primary)
+}
+
+aside .sidebar a:hover span {
+    margin-left: 1rem;
+}
+
+/*Main*/
+main {
+    margin: 1.6rem 0 0 2rem;
+}
+
+main h1 {
+    text-align: center;
+}
+
+/*Table dashboard*/
+
+main .table-dashboard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.6rem;
+}
+
+main .table-dashboard .provinciales {
+    margin-bottom: 2rem;
+}
+
+main .table-dashboard .provinciales table {
+    margin: 2rem 0;
+    background: var(--color-white);
+    width: 100%;
+    border-radius: var(--card-border-radius);
+    padding: var(--card-padding);
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+}
+
+main .table-dashboard .provinciales table:hover {
+    box-shadow: none;
+}
+
+th{
+    padding-bottom: 1rem;
+}
+
+main table tbody td {
+    height: 2.8rem;
+    border-bottom: 1px solid var(--color-light);
+    text-align: left;
+}
+
+main table tbody tr:last-child td {
+    border: none;
+}
+
+
+main table tbody tr td.done {
+    color: var(--color-primary-variant);
+}
+
+main table tbody tr td.pending {
+    color: var(--color-danger)
+}
+
+/* right */
+
+.right {
+    margin-top: 1.4rem;
+}
+
+.right .top {
+    display: flex;
+    justify-content: end;
+    gap: 2rem;
+}
+
+.right .top button {
+    display: none;
+}
+
+.right .top .logo {
+    display: none;
+}
+
+/*  Media queries */
+
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 94%;
+        grid-template-columns: 7rem auto 0;
+    }
+    
+    aside .logo h2 {
+        display: none;
+    }
+    
+    aside .sidebar {
+        justify-content: left;
+    }
+
+    aside .sidebar h3 {
+        display: none;
+    }
+
+    aside .sidebar a {
+        width: 5.6rem;
+    }
+
+ 
+    .profile .info {
+        display: none;
+    }
+    
+    aside .sidebar a:last-child {
+        position: absolute;
+        bottom: 5rem;
+
+    }
+
+    main .table-dashboard {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    main .table-dashboard .provinciales {
+        margin: 2rem;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    main .table-dashboard .provinciales table{
+        width: 66vw;
+        box-shadow: var(--box-shadow);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    aside {
+        position: fixed;
+        left: -100%;
+        background: var(--color-white);
+        width: 18rem;
+        z-index: 3;
+        box-shadow: 1rem 3rem 4rem var(--box-shadow);
+        height: 100vh;
+        padding-right: var(--card-padding);
+        display: none;
+        animation: showMenu 400ms ease forwards;
+    }
+
+    @keyframes showMenu {
+        to{
+            left: 0;
+        }
+    }
+
+    aside .logo {
+        display: flex;
+        align-items: center;
+        margin-left: 1rem;
+    }
+
+    aside .logo h2 {
+        display: inline;
+        align-items: center;
+    }
+
+    aside .sidebar h3 {
+        display: inline;
+    }
+
+    aside .sidebar a {
+        width: 100%;
+        height: 3.4rem;
+    }
+
+    aside .sidebar a:last-child {
+        position: absolute;
+        bottom: 5rem;
+    }
+
+    aside .sidebar a .profile {
+        display: flex;
+        margin-left: 0;
+        justify-content: left;
+    }
+
+    aside .sidebar a .profile .info {
+        display: block;
+    }
+
+    aside .close {
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    main {
+        margin-top: 8rem;
+    }
+    main h1 {
+        margin-bottom: 2rem;
+    }
+
+    main .table-dashboard .provinciales {           
+        position: relative;
+        margin: 0;
+        width: 100%;
+    }
+
+    main .table-dashboard .provinciales table {
+        width: 100%;
+        margin: 0 auto 4rem;
+        box-shadow: var(--box-shadow);
+    }
+
+    .right {
+        width: 94%;
+        margin: 0 auto 4rem;
+    }
+
+    .right .top {
+        position: fixed;
+        top: 0;
+        left: 0;
+        align-items: center;
+        padding: 0 0.8rem;
+        height: 4.6rem;
+        background: var(--color-white);
+        width: 100%;
+        margin: 0;
+        z-index: 2;
+        box-shadow: 0 1rem 1rem var(--color-light) 
+    }
+
+    .right .top button {
+        display: inline-block;
+        background: transparent;
+        cursor: pointer;
+        color: var(--color-dark);
+        position: absolute;
+        left: 2rem;
+    }
+
+    .right .top button span {
+        font-size: 2rem;
+    }
+
+    .right .top .logo {
+        display: flex;
+        gap : 0.8rem;
+    }
+    
+    .right .top .logo img {
+        width: 2rem;
+    }
+    
+    .right .top .logo h2 {
+        display: flex;
+        align-items: center;
+    }
+
+    .close {
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        margin-left: 1.4rem;
+    }
+
+}
+
+

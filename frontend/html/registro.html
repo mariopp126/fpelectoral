@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="../css/registro.css">
+    <script src="https://kit.fontawesome.com/0b325f17f1.js" crossorigin="anonymous"></script>    <link rel="stylesheet" href="../css/dashboard.css">
+    <title>Registro</title>
+</head>
+<body>
+    <div class="container">
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <img src="../recursos/Logo-Fp.png" alt="Logo Fuerza del Pueblo">
+                    <h2 class="text-muted"><span class="primary">FP</span>Electoral</h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span><i class="fa-solid fa-xmark"></i></span>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <a href="#" class="photo-profile">
+                    <div class="profile">
+                        <div class="profile-photo">
+                            <img src="../recursos/instagram.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <p>Mario</p>
+                        </div>
+                    </div>             
+                </a>
+                
+                <a href="./dashboard.html">
+                    <span><i class="fa-solid fa-house"></i></span>
+                    <h3>Dashboard</h3>               
+                </a>
+                <a href="./registro.html" class="active">
+                    <span><i class="fa-solid fa-user"></i></span>
+                    <h3>Registro</h3>               
+                </a>
+                <a href="#">
+                    <span><i class="fa-solid fa-lock"></i></span>
+                    <h3>Seguridad</h3>               
+                </a>
+                <a href="#">
+                    <span><i class="fa-solid fa-user-group"></i></span>
+                    <h3>Padrón JCE</h3>               
+                </a>
+                <a href="#">
+                    <span><i class="fa-solid fa-gear"></i></span>
+                    <h3>Configuración</h3>               
+                </a>
+                <a href="#">
+                    <span><i class="fa-solid fa-receipt"></i></span>
+                    <h3>Reporte</h3>               
+                </a>
+                <a href="#">
+                    <span class=""><i class="fa-solid fa-ranking-star"></i></span>
+                    <h3>Acreditaciones</h3>               
+                </a>
+                <a href="#">
+                    <span class=""><i class="fa-solid fa-right-from-bracket"></i></span>
+                    <h3>Logout</h3>               
+                </a>
+
+            </div>
+        </aside>   
+
+        <main>
+            <h1>Registro</h1>
+            <div class="search-container">
+                <form action="" class="search">
+                    <h3>Cédula</h3>
+                    <input type="text" placeholder="001...">
+                    <button><i class="fa-solid fa-magnifying-glass"></i>Buscar</button>
+                </form> 
+            </div>
+            <div class="form-info-pers-container">
+                <form action="" class="form-info-personal">
+                    <div class="input-form-container">
+                        <h3>Nombre</h3>
+                        <input type="text" placeholder="Escribe tu nombre...">
+                    </div>
+                    <div class="input-form-container">
+                        <h3>Teléfono</h3>
+                        <input type="tel" placeholder="809..." pattern="[0-9]{3}[0-9]{3}[0-9]{4}">
+                    </div>
+                    <div class="input-form-container">
+                        <h3>Provincia</h3>
+                        <input type="text" placeholder="Distrito Nacional">
+                    </div>
+                    <div class="input-form-container">
+                        <h3>Municipio</h3>
+                        <input type="text" placeholder="Santo Domingo Oeste"/>
+                    </div>
+                    <div class="input-form-container">
+                        <h3>Recinto</h3>
+                        <input type="text" placeholder="Centro Educativo Los Rosantes">
+                    </div>
+                    <div class="input-form-container">
+                        <h3>Colegio</h3>
+                        <input type="text" placeholder="370">
+                    </div>
+                    <div class="input-form-container">
+                        <h3>Circunscripción</h3>
+                        <input type="text" placeholder="1">
+                    </div>
+                </form>
+                <div class="photo">
+                    <img src="../recursos/instagram.jpg" alt="Foto de cedula" class="profile-photo">
+                    <div class="envia">
+                        <button>Registrar usuario</button>
+                    </div>
+                </div>
+            </div>
+            <div class="form-info-posicion">
+                <div class="select-container">
+                    <div class="select-label">
+                        <h3 class="select-label">Equipo de trabajo</h3>
+                        <div class="select">
+                            <select name="Equipo de trabajo" id="equipo" >
+                                <option value="Provincial">Provincial</option>
+                                <option value="Provincial">Municipal</option>
+                                <option value="Provincial">Provincial</option>
+                                <option value="Provincial">Provincial</option>
+                                <option value="Provincial">Provincial</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="select-container">
+                    <div class="select-label">
+                        <h3 class="select-label">Provincia</h3>
+                        <div class="select">
+                            <select name="Provincias" id="provincias" >
+                                <option value="Provincial">Santo Domingo</option>
+                                <option value="Provincial">Azua</option>
+                                <option value="Provincial">Provincial</option>
+                                <option value="Provincial">Provincial</option>
+                                <option value="Provincial">Provincial</option>
+                            </select>
+                        </div>
+                       
+                    </div>
+                </div>
+
+                <div class="select-container">
+                    <div class="select-label">
+                        <h3 class="select-label">Municipio</h3>
+                        <div class="select">
+                            <select name="municipio" id="municipio" >
+                                <option value="Provincial">Santo Domigo Oeste</option>
+                                <option value="Provincial">Mucnicipal</option>
+                                <option value="Provincial">Provincial</option>
+                                <option value="Provincial">Provincial</option>
+                                <option value="Provincial">Provincial</option>
+                            </select>
+                        </div>
+                       
+                    </div>
+                </div>
+
+                <div class="select-container">
+                    <div class="select-label">
+                        <h3 class="select-label">Distrito Municipal</h3>
+                        <div class="select">
+                            <select name="distrito municipal" id="distrito-municipal" >
+                                <option value="Provincial">Provincial</option>
+                                <option value="Provincial">Mucnicipal</option>
+                                <option value="Provincial">Provincial</option>
+                                <option value="Provincial">Provincial</option>
+                                <option value="Provincial">Provincial</option>
+                            </select>
+                        </div>
+                       
+                    </div>
+                </div>
+
+                <div class="select-container">
+                    <div class="select-label">
+                        <h3 class="select-label">Circunscripción</h3>
+                        <div class="select">
+                            <select name="circunscripcion" id="circunscripcion" >
+                                <option value="Provincial">1</option>
+                                <option value="Provincial">2</option>
+                                <option value="Provincial">3</option>
+                                <option value="Provincial">4</option>
+                                <option value="Provincial">5</option>
+                            </select>
+                        </div>
+                       
+                    </div>
+                </div>
+
+                <div class="select-container">
+                    <div class="select-label">
+                        <h3 class="select-label">Recinto</h3>
+                        <div class="select">
+                            <select name="recinto" id="recinto" >
+                                <option value="Provincial">370</option>
+                                <option value="Provincial">2</option>
+                                <option value="Provincial">3</option>
+                                <option value="Provincial">4</option>
+                                <option value="Provincial">5</option>
+                            </select>
+                        </div>
+                       
+                    </div>
+                </div>
+
+                <div class="select-container">
+                    <div class="select-label">
+                        <h3 class="select-label">Colegio</h3>
+                        <div class="select">
+                            <select name="colegio" id="colegio" >
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                       
+                    </div>
+                </div>
+
+                <div class="select-container">
+                    <div class="select-label">
+                        <h3 class="select-label">función</h3>
+                        <div class="select">
+                            <select name="funcion" id="funcion" >
+                                <option value="Provincial">Evalacion y monitoreo del plan electoral</option>
+                                <option value="Provincial">2</option>
+                                <option value="Provincial">3</option>
+                                <option value="Provincial">4</option>
+                                <option value="Provincial">5</option>
+                            </select>
+                        </div> 
+                    </div>
+                </div>
+
+            </div>
+        </main>
+
+        <div class="right">
+            <div class="top">
+                <div class="logo">
+                    <img src="../recursos/Logo-Fp.png" alt="Logo Fuerza del Pueblo">
+                    <h2 class="text-muted"><span class="primary">FP</span>Electoral</h2>
+                </div>
+                 <button id="menu-btn">
+                    <span><i class="fa-solid fa-bars"></i></span>
+                 </button>
+
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+    <script src="../js/menu.js"></script>
+    <!-- <script src="../js/registro.js"></script> -->
+</body>
+</html>
